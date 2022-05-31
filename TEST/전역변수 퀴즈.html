@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getGrade() {    // 함수 정의
+        var kor=95;          // 지역 변수
+        var mat=90;
+        var eng=85;
+        var sum=kor+mat+eng;
+        }
+        var kor=100;            // 전역 변수
+        var mat=90;
+        var eng=85;        
+        var sum=kor+mat+eng;
+        getGrade();             // 함수 호출
+        document.write("국어 점수 : " + kor + "<br>");
+        document.write("수학 점수 : " + mat + "<br>");        
+        document.write("영어 점수 : " + eng + "<br>");            
+        document.write("세 점수의 합 : " + sum + "<br>");
+
+   </script>
+</body>
+</html>
